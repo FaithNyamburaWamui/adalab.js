@@ -1,0 +1,21 @@
+.btn{
+   width: 10%;
+   margin-bottom: 50px;
+   padding-top: 15px;
+   padding-bottom: 15px;
+   font-size: larger;
+   border-radius: 23px;
+
+}
+.btn a{
+    color: white;
+    text-decoration: none;
+}
+
+.text{
+    text-align: center;
+}
+.log{
+    text-align: center;
+    font-size: 33px;
+}

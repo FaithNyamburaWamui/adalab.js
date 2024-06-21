@@ -2,6 +2,9 @@ import {Routes,Route,Link} from "react-router-dom"
 import Login from "./Login"
 // import { useState } from "react";
 import Users from "./Users";
+import { login } from "./Login/utils";
+import LoginPath from "./LoginPath";
+
 
 export function Introduction(){
   return(
@@ -12,6 +15,7 @@ export function Introduction(){
 function App(){
   return(
     <div>
+      <LoginPath/>
       <nav>
       <Link to="/login"></Link>
       </nav>

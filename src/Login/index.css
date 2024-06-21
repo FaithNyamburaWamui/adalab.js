@@ -1,7 +1,7 @@
 form{
-    width: 40%;
+    width: 55%;
     border-radius: solid 1px;
-    padding: 50px;
+    padding: 60px;
     margin-bottom: 20px;
     border: solid 1px;
     
@@ -19,9 +19,14 @@ input{
 button{
     padding: 10px 12px;
     width: 96%;
-    margin-top: 2%;
+    margin-top: 1%;
     border: none;
     border-radius: 5px;
     background-color: rgb(97,164,97);
     color: #ffff;
+}
+
+.submit{
+    margin-left: 28%;
+    
 }

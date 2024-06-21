@@ -13,12 +13,13 @@ const Login=()=>{
     const handleLogin=async(event)=>{
         event.preventDefault();
         const results = await login({username,password});
-        link('./users')
+       
         console.log({results});
+        link('./users')
     }
 
     return(
-        <div>
+        <div className='submit'>
             <form onSubmit={handleLogin}>
               <h1>Log In</h1>
                 <input placeholder="Enter username" type="text" onChange={(event)=>setUserName(event.target.value)}/>
