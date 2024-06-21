@@ -1,3 +1,4 @@
+import {Routes,Route,Link} from "react-router-dom"
 import Login from "./Login"
 // import { useState } from "react";
 import Users from "./Users";
@@ -11,8 +12,14 @@ export function Introduction(){
 function App(){
   return(
     <div>
-      <Login/>
-      <Users/>
+      <nav>
+      <Link to="/login"></Link>
+      </nav>
+     
+      <Routes>
+        <Route path='/login' element={<Login/>}/>
+        <Route path='/users' element={<Users/>}/>
+      </Routes>
     </div>
   )
 }

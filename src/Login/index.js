@@ -1,9 +1,11 @@
 import './index.css'
 import { useState } from "react";
 import {login}  from "./utils"
+import { Link,useNavigate } from 'react-router-dom';
 
 const Login=()=>{
-    
+
+    const link=useNavigate();
     const [username,setUserName]=useState("");
     const [password,setPassword]=useState("")
     console.log({username})
@@ -11,6 +13,7 @@ const Login=()=>{
     const handleLogin=async(event)=>{
         event.preventDefault();
         const results = await login({username,password});
+        link('./users')
         console.log({results});
     }
 
@@ -22,7 +25,8 @@ const Login=()=>{
                 {/* <br> */}
                 <input placeholder="Enter Password" type="password" onChange={(event)=>setPassword(event.target.value)}/>
                 {/* </br> */}
-                <button type="submit">Login</button>
+                <Link to="/users"><button type="submit">Login</button></Link>
+               
             </form>
         </div>
     )
